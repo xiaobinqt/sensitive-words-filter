@@ -1,0 +1,20 @@
+{
+    "name": "xiaobinqt\/sensitive-words-filter",
+    "description": "sensitive words filter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xiaobinqt",
+            "email": "binnarcissus@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^6.5",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xiaobinqt\\SensitiveWordsFilter\\": "src"
+        }
+    }
+}

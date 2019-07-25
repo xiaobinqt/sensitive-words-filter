@@ -9,7 +9,7 @@
 $ composer require xiaobinqt/sensitive-words-filter -vvv
 ```
 
-## 基本使用
+## Usage
 
 ```php
 use Xiaobinqt\SensitiveWordsFilter\SensitiveWordsFilter;
@@ -22,13 +22,26 @@ try {
 } catch (Exception $exception) {
     // TODO
 }
-
-```
-## 返回的结果
-```
-array("淫色电影");
 ```
 
+## Return Resource
+```php
+array(
+    'costTimeMs'     => 21571.157217026,
+    'sensitiveWords' => "淫色电影"
+);
+```
+
+## Advanced usage
++ 自定义敏感词文件
+```php
+$senPath = __DIR__ . DIRECTORY_SEPARATOR . 'mysen.txt';
+$obj = new SensitiveWordsFilter($senPath);
+```
++ 自定义敏感词数组
+```
+$obj = new SensitiveWordsFilter(null, array("台湾独立建国"));
+```
 
 ## Contributing
 

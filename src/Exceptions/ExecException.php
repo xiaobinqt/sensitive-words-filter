@@ -2,15 +2,15 @@
 /**
  * Created by PhpStorm.
  * User: BinWei
- * Date: 2019/7/24
- * Time: 19:43
+ * Date: 2019/7/25
+ * Time: 10:19
  */
 
 
 namespace Xiaobinqt\SensitiveWordsFilter\Exceptions;
 
 
-class FileException extends Exception
+class ExecException extends Exception
 {
 
 }
